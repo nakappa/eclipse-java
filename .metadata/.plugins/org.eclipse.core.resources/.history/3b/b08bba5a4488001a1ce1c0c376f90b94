@@ -8,7 +8,8 @@ import excecoes.entities.Reservation;
 public class excecoes {
 
 	public static void main(String[] args) throws ParseException {
-		
+
+		// method3();
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
