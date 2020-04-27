@@ -1,0 +1,78 @@
+import heranca_polimorfismo.entities.Account;
+import heranca_polimorfismo.entities.BusinessAccount;
+import heranca_polimorfismo.entities.SavingsAccount;
+
+/*
+	HERANÇA
+			-> associação entre classes
+			-> tipo de associação que permite que uma classe herde todos dados e comportamentos de outra classe
+	
+	UPCASTING
+			-> casting da subclasse para superclasse
+			-> usado comumente em polimorfismo
+			
+	DOWNCASTING
+			-> casting da superclasse para subclasse
+			-> palavra instanceof
+			-> usado comumente em métodos que recebem parâmetros genéricos (ex.: Equals)
+			
+	SOBREPOSIÇÃO ou SOBRESCRITA
+			-> implementação de um método de uma superclasse na subclasse
+			-> fortemente recomendável usar a anotação @Override em um método sobrescrito
+			-> facilita a leitura e compreensão do código avisando ao compilador que há uma sobrescrita
+			
+	SUPER
+			-> usada para chamar a implementação da superclasse
+			
+	FINAL
+			-> ao ser usada em uma classe, evita que a classe seja herdada
+			-> ao ser usada em um método, evita que o método seja sobreposto (sobrescrito)
+			-> dependendo das regras de negócio, às vezes és desejável garantir que uma classe não seja herdada, ou que um método não seja sobreposto
+			-> atributos de tipo de uma classe final são analizados de forma mais rápida em tempo de execução
+			
+			OBS.: geralmente convém acrescentar final em métodos sobrepostos, pois sobreposições múltiplas podem ser uma porta de entrada para inconsistências
+*/
+
+public class herança {
+	
+	public static void main(String[] args) {
+		
+		Account acc = new Account(1001, "Alex", 1000.0);
+		acc.withdraw(200.0);
+		System.out.println(acc.getBalance());
+		
+		BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
+		
+		// UPCASTING
+		Account acc1 = bacc;
+		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
+		Account acc3 = new SavingsAccount(1004, "Ana", 0.0, 0.01);
+		
+		// DOWNCASTING
+		BusinessAccount acc4 = (BusinessAccount) acc2;
+		acc4.loan(100.0);
+		
+		if(acc3 instanceof BusinessAccount) {
+			BusinessAccount acc5 = (BusinessAccount) acc3;
+			acc5.loan(200.0);
+			System.out.println("Loan!");
+		}
+		
+		if(acc3 instanceof SavingsAccount) {
+			SavingsAccount acc5 = (SavingsAccount) acc3;
+			acc5.updateBalance();
+			System.out.println("Update!");
+		}
+		
+		// SOBREPOSIÇÃO
+		Account acc6 = new SavingsAccount(1005, "Charle", 1000.0, 0.01);
+		acc6.withdraw(200.0);
+		System.out.println(acc6.getBalance());
+		
+		// SUPER
+		Account acc7 = new BusinessAccount(1006, "Jhon", 1000.0, 500.0);
+		acc7.withdraw(200.0);
+		System.out.printf("%.2f", acc7.getBalance());
+	}
+
+}

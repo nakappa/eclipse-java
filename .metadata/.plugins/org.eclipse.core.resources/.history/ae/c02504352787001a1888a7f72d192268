@@ -1,0 +1,7 @@
+package classes_metodosAbstratos.entities;
+
+public enum Color {
+	BLACK,
+	BLUE,
+	RED
+}

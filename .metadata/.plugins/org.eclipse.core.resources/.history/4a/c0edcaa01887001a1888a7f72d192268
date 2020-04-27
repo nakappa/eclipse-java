@@ -1,0 +1,29 @@
+package entities;
+
+public class Individual extends TaxPayer {
+
+	private Double heathExpenditures;
+	
+	public Individual() {
+		super();
+	}
+
+	public Individual(String name, Double anualIncome, Double heathExpenditures) {
+		super(name, anualIncome);
+		this.heathExpenditures = heathExpenditures;
+	}
+
+	public Double getHeathExpenditures() {
+		return heathExpenditures;
+	}
+
+	public void setHeathExpenditures(Double heathExpenditures) {
+		this.heathExpenditures = heathExpenditures;
+	}
+
+	@Override
+	public double tax() {
+		return (super.getAnualIncome() * 1.25) - (heathExpenditures * 1.5);
+	}
+
+}

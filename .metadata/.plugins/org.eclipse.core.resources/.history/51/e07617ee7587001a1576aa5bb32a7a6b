@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+/*
+EXCEÇÕES
+		-> qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução
+		-> permite que erros sejam tratados de forma consistente e flexível, usando boas práticas
+		-> em java, é um objeto herdado da classe:
+			* java.lang.Exception - o compilador obriga a tratar ou propagar
+			* java.lang.RuntimeException - o compilador não obriga a tratar ou propragar
+			
+		-> quando lançada, é propagada na pilha de chamadas de métodos em execução, até que seja capturada (tratada) ou o programa seja encerrado
+		-> tem como vantagens:
+			- delegar a lógica do erro para a classe responsável por conhecer as regras que podem ocasionar o erro
+			- trata de forma organizada (inclusive hierárquica) exceções de tipos diferentes
+			- a execução pode carregar dados quaisquer
+			
+ESTRUTURA TRY-CATCH
+		
+		BLOCO TRY -> contém o códico que representa a execução normal do trecho de código que pode acerretar em uma exceção
+		
+		BLOCO CATCH
+					- contém o código a ser executado caso uma exceção ocorra
+					- deve ser especificado o tipo de exceção a ser tratada (upcasting é permitido)
+ */
+
+public class excecoes {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String[] vect = sc.nextLine().split(" ");
+		int position = sc.nextInt();
+		System.out.println(vect[position]);
+		
+		sc.close();
+	}
+
+}

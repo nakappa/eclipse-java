@@ -1,0 +1,8 @@
+package excecoes.entities;
+
+public class Reservation {
+
+	private Integer rooNumber;
+	private Date checkIn;
+	private Date checkOut;
+}

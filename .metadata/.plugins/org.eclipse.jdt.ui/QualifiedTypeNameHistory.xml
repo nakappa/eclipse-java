@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="entidades.Aluguel"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="entities.Empregado"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
+    <fullyQualifiedTypeName name="java.util.TimeZone"/>
+    <fullyQualifiedTypeName name="entities.enums.OrderStatus"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="entities.enums.WorkerLevel"/>
+    <fullyQualifiedTypeName name="entities.Department"/>
+    <fullyQualifiedTypeName name="entities.HourContract"/>
+    <fullyQualifiedTypeName name="entities.Comment"/>
+    <fullyQualifiedTypeName name="enums.OrderStatus"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="application.exercicio_01"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="entities.Client"/>
+    <fullyQualifiedTypeName name="entities.Order"/>
+    <fullyQualifiedTypeName name="entities.Account"/>
+    <fullyQualifiedTypeName name="entities.BusinessAccount"/>
+    <fullyQualifiedTypeName name="com.sun.tools.sjavac.server.SysInfo"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="entities.abstracts.Account"/>
+    <fullyQualifiedTypeName name="entities.SavingsAccount"/>
+    <fullyQualifiedTypeName name="entities.abstracts.BusinessAccount"/>
+    <fullyQualifiedTypeName name="entities.enums.Color"/>
+    <fullyQualifiedTypeName name="entities.Shape"/>
+    <fullyQualifiedTypeName name="entities.Rectangle"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="entities.Individual"/>
+    <fullyQualifiedTypeName name="entities.Company"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+</qualifiedTypeNameHistroy>

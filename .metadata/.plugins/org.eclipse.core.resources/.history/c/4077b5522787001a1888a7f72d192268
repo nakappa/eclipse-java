@@ -1,0 +1,7 @@
+package classesMetodosAbstratatos.enums;
+
+public enum Color {
+	BLACK,
+	BLUE,
+	RED
+}

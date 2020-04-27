@@ -1,0 +1,14 @@
+/*
+ * CLASSES ABSTRATAS
+ * 			-> são classes que não podem ser instanciadas
+ * 			-> forma de garantir herança total: somente subclasses não abstratas podem ser instanciadas, mas nunca a superclasse abstrata
+ */
+
+public class classeAbstrata {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
